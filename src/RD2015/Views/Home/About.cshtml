@@ -5,3 +5,12 @@
 <h3>@ViewData["Message"]</h3>
 
 <p>Use this area to provide additional information.</p>
+
+@model IEnumerable<Products>
+
+
+@foreach (var item in Model)
+{
+    <label asp-for="@item.ProductName"></label>
+}
+

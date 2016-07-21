@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using RD2015.Models;
 
 namespace RD2015.Controllers
 {
@@ -17,7 +18,8 @@ namespace RD2015.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View();
+            var products = new ProductStore();
+            return View(products);
         }
 
         public IActionResult Contact()
