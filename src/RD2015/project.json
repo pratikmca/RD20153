@@ -28,7 +28,8 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-    "OctoPack": "3.0.71"
+    "OctoPack": "3.0.71",
+    "OctopusTools": "3.3.18"
   },
 
   "commands": {
@@ -37,7 +38,11 @@
   },
 
   "frameworks": {
-    "dnx451": { },
+    "dnx451": {
+      "dependencies": {
+        "Octopus.Client": "3.3.22"
+      }
+    },
     "dnxcore50": { }
   },
 
